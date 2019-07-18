@@ -1,0 +1,22 @@
+runmode: release #dev mode, debug, release, test
+addr: :9999 # http port
+name: My Go Project #name
+url: http://0.0.0.0:9999
+max_ping_count: 10
+jwt_secret: Rtg8BPKNEf2mB4mgvKONGPZZQSaJWNLijxR42qRgq0iBb5
+log:
+  writers: file
+  logger_level: DEBUG
+  logger_file: log/scorecard-api.log
+  log_format_text: false
+  rollingPolicy: size
+  log_rotate_date: 1
+  log_rotate_size: 1024
+  log_backup_count: 7
+# postgres:
+#   name: postgres
+#   host: postgres-release-postgresql
+#   port: 5432
+#   user: score_card_app
+#   password: Pass4scorecard
+#   dbname: score_card

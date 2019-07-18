@@ -1,0 +1,8 @@
+tmp
+log
+gin-bin
+*.bak
+scorecard-api
+vendor
+go.sum
+.tmp_build
